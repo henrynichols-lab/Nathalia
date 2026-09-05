@@ -4,8 +4,8 @@ description: "Lore, characters, places, and history for our tabletop campaign."
 
 # --- Fill these in once your repo exists on GitHub ---
 # Used to build "Edit this page" links that jump straight into GitHub's editor.
-github_username: "YOUR-GITHUB-USERNAME"
-github_repo: "YOUR-REPO-NAME"
+github_username: "henrynichols-lab"
+github_repo: "Nathalia"
 github_branch: "main"
 
 # The URL of your deployed Cloudflare Worker (see README: "PIN-based editor

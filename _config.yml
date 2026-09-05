@@ -1,0 +1,76 @@
+title: "The Codex"
+tagline: "A campaign codex — edit freely, wander widely"
+description: "Lore, characters, places, and history for our tabletop campaign."
+
+# --- Fill these in once your repo exists on GitHub ---
+# Used to build "Edit this page" links that jump straight into GitHub's editor.
+github_username: "YOUR-GITHUB-USERNAME"
+github_repo: "YOUR-REPO-NAME"
+github_branch: "main"
+
+# The URL of your deployed Cloudflare Worker (see README: "PIN-based editor
+# without GitHub accounts"). Leave blank to disable the /edit/ page.
+editor_worker_url: ""
+
+collections:
+  characters:
+    output: true
+    permalink: /characters/:path/
+  locations:
+    output: true
+    permalink: /locations/:path/
+  factions:
+    output: true
+    permalink: /factions/:path/
+  items:
+    output: true
+    permalink: /items/:path/
+  sessions:
+    output: true
+    permalink: /sessions/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "characters"
+    values:
+      layout: entry
+      category: Characters
+  - scope:
+      path: ""
+      type: "locations"
+    values:
+      layout: entry
+      category: Locations
+  - scope:
+      path: ""
+      type: "factions"
+    values:
+      layout: entry
+      category: Factions
+  - scope:
+      path: ""
+      type: "items"
+    values:
+      layout: entry
+      category: Items
+  - scope:
+      path: ""
+      type: "sessions"
+    values:
+      layout: entry
+      category: Sessions
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
